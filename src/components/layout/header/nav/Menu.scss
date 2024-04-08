@@ -1,0 +1,40 @@
+@use '../../../../styles/variables' as *;
+@use '../../../../styles/mixins' as *;
+
+
+.header__menu {
+  display: none;
+  height: 100%;
+
+  @media (min-width: map-get($test-breakpoints, md)) {
+    display: flex;
+    align-items: center;
+
+    ul {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin: 0;
+      align-items: center;
+    }
+  }
+}
+
+.menu__basket-link {
+  .menu__basket-icon {
+    display: block;
+    width: 30px;
+    height: 38px;
+    background-image: url($basket-icon);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+    margin-top: 0px;            
+
+    &:hover {
+      @include generate-color-mask($test-gradient, url($basket-icon));
+    }
+  }
+}

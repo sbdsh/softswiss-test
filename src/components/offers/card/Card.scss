@@ -1,0 +1,113 @@
+@use '../../../styles/variables' as *;
+
+.card {
+   position: relative;
+   height: 350px;
+   border-radius: 10px;
+   background-color: aqua;
+   padding-left: 20px;
+
+   justify-content: flex-end;
+   position: relative;
+   flex-direction: column;
+   align-items: flex-start;
+   display: flex;
+   background: linear-gradient(to bottom, #000000, #0F1420C9);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+
+   &:nth-child(4n + 1) {
+      background-image: url('../../../assets/images/cards/card1.png');
+   }
+   &:nth-child(4n + 2) {
+   background-image: url('../../../assets/images/cards/card2.png');
+   }
+   &:nth-child(4n + 3) {
+   background-image: url('../../../assets/images/cards/card3.png');
+   }
+   &:nth-child(4n) {
+   background-image: url('../../../assets/images/cards/card4.png');
+   }
+
+   @media (min-width: map-get($test-breakpoints, md)) {
+      height: 350px;
+   }
+
+   @media (min-width: map-get($test-breakpoints, lg)) {
+      height: 450px;
+      grid-column: auto;
+      &:nth-child(3n + 1) {
+         grid-column: 1 / -1;
+      }
+   }
+
+   &:nth-child(3n + 1) {
+      .card__title {
+         @media (min-width: map-get($test-breakpoints, lg)) {
+            font-size: 74px;
+         }
+      }
+   }
+
+   &__title {
+      font-size: 40px;
+      text-align: left;
+      width: 60%;
+      margin-bottom: 10px;
+   
+      @media (min-width: map-get($test-breakpoints, md)) {
+         font-size: 40px;
+      }
+   
+      @media (min-width: map-get($test-breakpoints, lg)) {
+         font-size: 46px;
+         width: 75%;
+      }
+
+   }
+
+   &__text {
+      font-size: 16px;
+      text-align: left;
+
+      @media (min-width: map-get($test-breakpoints, md)) {
+         font-size: 16px;
+      }
+   
+      @media (min-width: map-get($test-breakpoints, lg)) {
+         font-size: 26px;
+      }
+
+   }
+
+   &__button {
+
+      border-radius: 100px;
+      border: 2px solid $test-yellow;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 7px 40px;
+      color: $test-yellow;
+      background-color: transparent;
+      opacity: 1;
+      transition: opacity 0.3s;
+
+      align-self: flex-start;
+      margin-bottom: 20px;
+  
+      &:hover {
+        opacity: 0.6;
+      }
+
+      @media (min-width: map-get($test-breakpoints, md)) {
+         font-size: 16px;
+         padding: 7px 40px;
+      }
+   
+      @media (min-width: map-get($test-breakpoints, lg)) {
+         font-size: 22px;
+         padding: 14px 40px;
+      }
+   }
+}

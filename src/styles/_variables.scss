@@ -1,0 +1,36 @@
+$test-breakpoints: (
+  xs: 0,
+  sm: 360px,
+  md: 768px,
+  lg: 1248px,
+);
+
+$test-content-padding: (
+  padding-xs: 20px,
+  padding-sm: 30px,
+  padding-md: 30px,
+  padding-lg: 80px,
+);
+
+$basket-icon: '../../../../assets/images/icons/basket.svg';
+$burger-icon: '../../../../assets/images/icons/burger.svg';
+$close-icon: '../../../../assets/images/icons/close.svg';
+$logo-icon: '../../../../assets/images/icons/logo.svg';
+
+$earth-planet: '../../assets/images/earth/earth-planet.png';
+$orange-planet: '../../assets/images/earth/orange-planet.svg';
+$yellow-planet: '../../assets/images/earth/yellow-planet.png';
+$white-planet: '../../assets/images/earth/white-planet.svg';
+$rocket: '../../assets/images/earth/rocket-planet.svg';
+
+
+$test-black: #000000;
+$test-white: #ffffff;
+$test-yellow: #EBFF00;
+$test-purple: #FF70D9;
+$test-blue: #0D1E48;
+$test-orbit:#F8F8F8;
+
+$test-gradient: linear-gradient(98.25deg, $test-yellow 18.56%, $test-purple 76.02%);
+
+$test-footer-height: 127px;

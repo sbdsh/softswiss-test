@@ -1,0 +1,16 @@
+@use '../../../styles/variables' as *;
+
+.header {
+  background-color: $test-black;
+  color: $test-white;
+  height: 48px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  @media (min-width: map-get($test-breakpoints, md)) {
+    height: 80px;
+  }  
+}

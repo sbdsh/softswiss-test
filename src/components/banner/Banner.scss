@@ -1,0 +1,249 @@
+@use '../../styles/variables' as *;
+
+.banner {
+   background-color: $test-white;
+   height: 451px;
+   background-image: url('../../assets/images/banner.png');
+   background-position: top;
+   background-size: cover;
+   background-repeat: no-repeat;
+
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+   align-items: center;
+
+   &__object {
+      position: absolute;
+      width: 25vw;
+      height: 25vw;
+      // flex-shrink: 0;
+      right: 27%;
+      top: -2%;
+      max-width: 180px;
+      max-height: 180px;
+      min-width: 180px;
+      min-height: 180px;
+      transform: translate(00%, 9%);
+  
+      &:before {
+         position: absolute;
+         right: 10%;
+         top: 0;
+         max-width: 340px;
+         max-height: 340px;
+         min-width: 150px;
+         min-height: 150px;
+         content: '';
+         display: block;
+         width: 70%;
+         height: 70%;
+         background-color: transparent;
+         border: 1px solid $test-orbit;
+         border-radius: 50%;
+      }
+
+      @media (min-width: map-get($test-breakpoints, md)) {
+         position: absolute;
+         right: 10%;
+         top: 25%;
+         transform: translate(50%, -42%);
+         width: 40vw;
+         height: 40vw;
+         max-width: 400px;
+         max-height: 400px;
+         min-width: 340px;
+         min-height: 340px;
+         &:before {
+            position: absolute;
+            top: 15%;
+            right: 11%;
+      
+            width: 49%;
+            height: 49%;
+         }
+      }
+
+      @media (min-width: map-get($test-breakpoints, lg)) {
+         right: 25%;
+         top: 25%;
+         width: 50vw;
+         height: 50vw;
+         max-width: 470px;
+         max-height: 470px;
+         position: absolute;
+   
+         &:before {
+            position: absolute;
+            top: 15%;
+            left: 12%;
+      
+            width: 69%;
+            height: 69%;
+         }
+      }
+      
+      &-planets {
+         position: relative;
+         width: 100%;
+         height: 100%;
+
+         background-image: 
+                           url($rocket),
+                           url($earth-planet),
+                           url($white-planet),
+                           url($yellow-planet),
+                           url($orange-planet);
+         background-position: 
+         70% 170%, 
+         150% 120%,
+         24% 80%,
+         11% 10%,
+         5% 50%;
+         background-size:
+         80%, 
+         90%,
+         5%,
+         11%,
+         7%;         
+         background-repeat: no-repeat;
+
+         @media (min-width: map-get($test-breakpoints, md)) {
+            background-position: 
+            83% 78%,
+            100% 33%,
+            52% 62%,
+            46% 20%,
+            41% 47%;
+            background-size: 
+            40%, 
+            55%,
+            2%,
+            6%,
+            4%;
+         }
+
+         @media (min-width: map-get($test-breakpoints, lg)) {
+            background-position: 
+            55% 113%,
+            88% 100%,
+            29% 81%,
+            14% 30%,
+            13% 63%;
+            background-size: 
+            45%,
+            80%,
+            2.5%,
+            8%,
+            4%;
+         }
+      }
+   }
+      
+   @media (min-width: map-get($test-breakpoints, md)) {
+      height: 420px;
+      justify-content: center;
+      align-items: flex-start;
+   }
+
+   @media (min-width: map-get($test-breakpoints, lg)) {
+      height: 490px;
+      justify-content: center;
+      align-items: flex-start;
+   }
+
+   &__title {
+      font-size: 36px; 
+      line-height: 36px;
+      margin: 0;
+      padding: 0;
+
+      &--emphasis {
+         color: $test-purple;
+      }
+
+      @media (min-width: map-get($test-breakpoints, md)) {
+         font-size: 48px;
+         line-height: 48px;
+      }
+
+      @media (min-width: map-get($test-breakpoints, lg)) {
+         font-size: 72px;
+         line-height: 72px;
+      }
+   }
+
+   &__text {
+      font-size: 16px; 
+      line-height: 19.2px;
+      margin: 0;
+      padding: 20px 0;
+
+      &--emphasis {
+         color: $test-yellow;
+      }
+
+      @media (min-width: map-get($test-breakpoints, md)) {
+         font-size: 22px;
+         line-height: 26.4px;
+      }
+
+      @media (min-width: map-get($test-breakpoints, lg)) {
+         font-size: 32px;
+         line-height: 38.4px; 
+
+      }
+   }
+
+   &__container {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 10px;
+   
+      @media (min-width: map-get($test-breakpoints, md)) {
+         width: 60%;
+         text-align: start;
+         align-items: flex-start;
+         padding: 0 30px;
+      }
+   
+      @media (min-width: map-get($test-breakpoints, lg)) {
+         width: 60%;
+         text-align: start;
+         align-items: flex-start;
+         padding: 0 50px;
+      }      
+   }
+
+   &__button {
+      border-radius: 100px;
+      border: 2px solid $test-yellow;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 7px 40px;
+      color: $test-black;
+      background-color: $test-yellow;
+      opacity: 1;
+      transition: opacity 0.3s;
+      margin-bottom: 20px;
+  
+      &:hover {
+        opacity: 0.6;
+      }
+   
+      @media (min-width: map-get($test-breakpoints, md)) {
+         font-size: 16px;
+         padding: 7px 40px;
+      }
+   
+      @media (min-width: map-get($test-breakpoints, lg)) {
+         font-size: 22px;
+         padding: 14px 40px;
+      }
+   }
+}
+

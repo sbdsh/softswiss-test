@@ -1,0 +1,28 @@
+@use '../../../../styles/variables' as *;
+
+.header__logo {
+   display: block;
+   background-image: url($logo-icon);
+   background-repeat: no-repeat;
+   height: 24px;
+   width: 72px;
+   position: relative;
+   background-size: contain;
+   background-position: center;
+   margin-left: 20px;
+
+  .header__logo-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+   @media (min-width: map-get($test-breakpoints, md)) {
+     margin-left: 30px;
+   }
+
+   @media (min-width: map-get($test-breakpoints, lg)) {
+     margin-left: 81.5px;
+     height: 35.11px;
+   }    
+}

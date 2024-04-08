@@ -1,0 +1,50 @@
+@use '../../styles/variables' as *;
+
+.offers {
+  padding: 40px map-get($test-content-padding, padding-xs);
+  border-radius: 10px;
+
+  &__title {
+    width: 317px;
+    height: 22px;
+
+    text-align: left;
+    padding-bottom: 10px;
+
+    @media (min-width: map-get($test-breakpoints, md)) {
+      width: 709px; 
+      height: 29px; 
+      font-size: 24px; 
+    }
+
+    @media (min-width: map-get($test-breakpoints, lg)) {
+      width: 1086px; 
+      height: 38px; 
+      font-size: 32px; 
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    grid-column: 1;
+  }
+}
+
+@media (min-width: map-get($test-breakpoints, md)) {
+  .offers__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .offers {
+    padding: 50px map-get($test-content-padding, padding-md);
+    gap: 30px;
+  }
+}
+ 
+@media (min-width: map-get($test-breakpoints, lg)) {
+  .offers {
+    padding: 50px map-get($test-content-padding, padding-lg);
+    gap: 40px;
+  }
+}
