@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/softswiss-test.git/static/css/main.3c552cba.css",
-    "main.js": "/softswiss-test.git/static/js/main.7524b153.js",
-    "static/media/banner.png": "/softswiss-test.git/static/media/banner.4aab6891aa0154909619.png",
-    "static/media/card4.png": "/softswiss-test.git/static/media/card4.511b9ad7cea50b825b43.png",
-    "static/media/card3.png": "/softswiss-test.git/static/media/card3.ae9aa59ad8b1b0e1bbe5.png",
-    "static/media/card1.png": "/softswiss-test.git/static/media/card1.bb1fa6100c281eaa03a7.png",
-    "static/media/rocket-planet.svg": "/softswiss-test.git/static/media/rocket-planet.78621a3e1a4c74808cdd.svg",
-    "static/media/rocket.svg": "/softswiss-test.git/static/media/rocket.10125416122e549354beab6eebcb5a8c.svg",
-    "static/media/card2.png": "/softswiss-test.git/static/media/card2.9422df6d19f673a1dd5f.png",
-    "static/media/earth-planet.png": "/softswiss-test.git/static/media/earth-planet.185944ccfa78bdc029a6.png",
-    "static/media/logo.svg": "/softswiss-test.git/static/media/logo.f477468d969fbad2b2c4.svg",
-    "static/media/basket.svg": "/softswiss-test.git/static/media/basket.5fdc8f10c95015c32240.svg",
-    "static/media/burger.svg": "/softswiss-test.git/static/media/burger.7e65dcdbfcb4fb7f60ea.svg",
-    "static/media/close.svg": "/softswiss-test.git/static/media/close.60d4f41347544050a7b9.svg",
-    "index.html": "/softswiss-test.git/index.html",
-    "static/media/orange-planet.svg": "/softswiss-test.git/static/media/orange-planet.537a2b27f908edc47311.svg",
-    "static/media/white-planet.svg": "/softswiss-test.git/static/media/white-planet.ae1e8deaa0e087a65661.svg",
-    "main.3c552cba.css.map": "/softswiss-test.git/static/css/main.3c552cba.css.map",
-    "main.7524b153.js.map": "/softswiss-test.git/static/js/main.7524b153.js.map"
+    "main.css": "/softswiss-test/static/css/main.3be7ee69.css",
+    "main.js": "/softswiss-test/static/js/main.b9dbb3b0.js",
+    "static/media/banner.png": "/softswiss-test/static/media/banner.4aab6891aa0154909619.png",
+    "static/media/card4.png": "/softswiss-test/static/media/card4.511b9ad7cea50b825b43.png",
+    "static/media/card3.png": "/softswiss-test/static/media/card3.ae9aa59ad8b1b0e1bbe5.png",
+    "static/media/card1.png": "/softswiss-test/static/media/card1.bb1fa6100c281eaa03a7.png",
+    "static/media/rocket-planet.svg": "/softswiss-test/static/media/rocket-planet.78621a3e1a4c74808cdd.svg",
+    "static/media/rocket.svg": "/softswiss-test/static/media/rocket.10125416122e549354beab6eebcb5a8c.svg",
+    "static/media/card2.png": "/softswiss-test/static/media/card2.9422df6d19f673a1dd5f.png",
+    "static/media/earth-planet.png": "/softswiss-test/static/media/earth-planet.185944ccfa78bdc029a6.png",
+    "static/media/logo.svg": "/softswiss-test/static/media/logo.f477468d969fbad2b2c4.svg",
+    "static/media/basket.svg": "/softswiss-test/static/media/basket.5fdc8f10c95015c32240.svg",
+    "static/media/burger.svg": "/softswiss-test/static/media/burger.7e65dcdbfcb4fb7f60ea.svg",
+    "static/media/close.svg": "/softswiss-test/static/media/close.60d4f41347544050a7b9.svg",
+    "index.html": "/softswiss-test/index.html",
+    "static/media/orange-planet.svg": "/softswiss-test/static/media/orange-planet.537a2b27f908edc47311.svg",
+    "static/media/white-planet.svg": "/softswiss-test/static/media/white-planet.ae1e8deaa0e087a65661.svg",
+    "main.3be7ee69.css.map": "/softswiss-test/static/css/main.3be7ee69.css.map",
+    "main.b9dbb3b0.js.map": "/softswiss-test/static/js/main.b9dbb3b0.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c552cba.css",
-    "static/js/main.7524b153.js"
+    "static/css/main.3be7ee69.css",
+    "static/js/main.b9dbb3b0.js"
   ]
 }
